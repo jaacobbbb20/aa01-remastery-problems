@@ -11,12 +11,19 @@ function eCounter(word) {
     let count = 0;
 
     // convert this for loop into a while loop
-    for (let index = 0; index < word.length; index++) {
+    let index = 0;
+    while(index < word.length) {
+        if(word[index] === 'e' || word[index] === 'E') {
+            count++;
+        }
+        index++;
+    }
+    /*for (let index = 0; index < word.length; index++) {
         let char = word[index];
         if (char === "e" || char === "E") {
             count += 1;
         }
-    }
+    } */
 
     return count;
 };

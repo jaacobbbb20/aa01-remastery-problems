@@ -10,7 +10,19 @@ String.toUpperCase: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 */
 
 
-// Your code here 
+function lastVowel(str) {
+  const vowels = 'aeiouAEIOU';
+  let lastVowel = null;
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+
+    if (vowels.includes(char)) {
+      lastVowel = char;
+    }
+  }
+  return lastVowel;
+}
 
 
 console.log(lastVowel('battery')); // 'e'

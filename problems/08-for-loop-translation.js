@@ -11,12 +11,11 @@ function aCounter(word) {
     let count = 0;
 
     // change this while loop into a for loop
-    while (index < word.length) {
-        let char = word[index];
-        if (char === "a" || char === "A") {
-            count += 1;
-        }
-        index++;
+    for(index = 0; index < word.length; index++) {
+       let char = word[index];
+       if (char === "a" || char === "A") {
+           count += 1;
+        }  
     }
     return count;
 };
